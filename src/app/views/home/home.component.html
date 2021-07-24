@@ -1,0 +1,46 @@
+<p>
+  <mat-toolbar class="toolbar" color="primary">
+    <span >Desafio Calcme</span>
+  </mat-toolbar>
+</p>
+<form action="POST" class="formulario" *ngIf="!submitted">
+
+    <mat-form-field appearance="legacy">
+      <mat-label>Nome</mat-label>
+      <input matInput placeholder="Nome"
+      type="text"
+      class="form-control"
+      id="nome"
+      required
+      [(ngModel)] = "usuario.nome"
+      name="nome">
+      <mat-icon matSuffix>personal</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field appearance="legacy">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="Email"
+      type="text"
+      class="form-control"
+      id="email"
+      required
+      [(ngModel)] = "usuario.email"
+      name="email">
+      <mat-icon matSuffix>email</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field appearance="legacy">
+      <mat-label>Telefone</mat-label>
+      <input matInput placeholder="Telefone"
+      type="text"
+      class="form-control"
+      id="telefone"
+      required
+      [(ngModel)] = "usuario.telefone"
+      name="telefone">
+      <mat-icon matSuffix>phone</mat-icon>
+    </mat-form-field>
+    <button (click) = "saveUsuario()"
+    mat-button color="primary" id="salvo">Enviar</button>
+
+</form>
