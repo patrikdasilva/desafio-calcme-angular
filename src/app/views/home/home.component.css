@@ -13,4 +13,6 @@
   justify-content: center;
   font-family: 'Fira code';
 }
-
+input{
+  border: none;
+}

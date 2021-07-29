@@ -12,9 +12,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
-
-
+import {MatTableModule} from '@angular/material/table';
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -32,7 +31,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatToolbarModule,
     FormsModule,
     HttpClientModule,
-
+    MatTableModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
